@@ -1,0 +1,371 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+}
+
+.socials {
+  width: 100%;
+  display: flex;
+  padding: 0 8%;
+  align-items: center;
+  justify-content: space-between;
+  line-height: 50px;
+  border-bottom: 1px solid rgba(190, 190, 190, 0.122);
+}
+
+.socials .email {
+  display: flex;
+  align-items: center;
+  text-align: center;
+  font-size: 12px;
+}
+
+.socials .email p {
+  display: flex;
+  align-items: center;
+  margin-right: 20px;
+}
+
+.socials .email p a {
+  text-decoration: none;
+  align-items: center;
+  display: flex;
+  color: #222;
+}
+
+.socials .email p .fa-solid {
+  width: 20px;
+  align-items: center;
+  margin-right: 8px;
+  color: darkblue;
+}
+
+.social-icons {
+  display: flex;
+  align-items: center;
+}
+
+.social-icons div .fa-brands {
+  height: 20px;
+  margin-left: 12px;
+  color: darkblue;
+}
+
+/* -------------Navigation Bar Set up----------------- */
+
+nav {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  justify-content: space-between;
+  padding: 0 8% 10px;
+  line-height: 75px;
+  background: #fff;
+  box-shadow: 0 0 1px 0 rgba(0, 0, 0, 0.125);
+  text-align: center;
+}
+
+nav .logo {
+  display: inline-block;
+  font-size: 16px;
+  line-height: 0;
+}
+
+nav .logo img {
+  width: 100px;
+}
+
+nav .logo p {
+  color: darkblue;
+  font-size: 12px;
+  font-weight: 500;
+}
+
+nav .nav-links {
+  display: inline-flex;
+  /* flex: 1; */
+  align-items: center;
+  justify-content: space-between;
+}
+
+nav .nav-links li {
+  padding: 8px 20px;
+  list-style-type: none;
+}
+
+.nav-links li a {
+  text-decoration: none;
+  font-size: 15px;
+  color: darkblue;
+  font-weight: 500;
+}
+
+nav .search-bar {
+  display: flex;
+  align-items: center;
+}
+
+nav .search-bar .fa-solid,
+.fa {
+  margin-left: 20px;
+  width: 20px;
+}
+
+nav .search-bar .fa {
+  color: #00008b;
+}
+
+nav .contact-us {
+  display: flex;
+  align-items: center;
+  margin-left: 15px;
+}
+
+nav .contact-us .fa-solid {
+  font-size: 24px;
+  color: #00008b;
+}
+
+nav .contact-us div {
+  display: inline-block;
+  text-align: left;
+  font: 12px;
+  line-height: 18px;
+  margin-left: 10px;
+}
+
+nav .contact-us div p {
+  font-size: 12px;
+}
+
+.contact-us div .call-number {
+  font-weight: 500;
+  font-size: 16px;
+}
+
+/* .....................Main Section.................... */
+
+main {
+  width: 100%;
+  height: 100vh;
+  background: linear-gradient(
+    to right,
+    rgba(187, 219, 247, 0.6),
+    rgb(77, 159, 232)
+  );
+}
+
+main .main-text {
+  display: flex;
+  padding: 40px 0 0 8%;
+  justify-content: space-between;
+  margin-bottom: 20%;
+  /* position: relative; */
+}
+
+.main-text .main-object-img {
+  max-width: 500px;
+  transform: scale(1.1);
+  position: absolute;
+  right: 23px;
+  margin-right: 0;
+}
+
+.main-text .main-object-img .main-img {
+  width: 100%;
+  float: right;
+}
+
+.main-text .colText {
+  flex-basis: 1;
+  margin-top: 60px;
+
+  /* max-width: 1400px; */
+}
+
+.main-text .colText h1 {
+  font-size: 75px;
+  font-weight: 800;
+  margin-bottom: 20px;
+  color: #00008b;
+}
+
+.main-text .colText p {
+  font-size: 18px;
+  line-height: 30px;
+  margin-bottom: 20px;
+  font-weight: 300;
+  color: #00008b;
+}
+
+.btn button {
+  padding: 10px 30px;
+  border-radius: 20px;
+  margin-right: 10px;
+  outline: 0;
+  border: 0;
+  font-weight: 600;
+  color: #fff;
+  background-color: blue;
+  cursor: pointer;
+  transition: all 0.5s ease;
+}
+
+.btn .active-btn,
+.btn button:hover {
+  background: #fff;
+  color: blue;
+}
+
+/* ---------------------services-gallery--------------------- */
+
+.services-gallery {
+  width: 100%;
+  height: 100vh;
+  background: #fff;
+  display: flex;
+  z-index: 8;
+  position: relative;
+}
+
+.services-gallery .service-row {
+  width: 80%;
+  height: 250px;
+  top: -100px;
+  left: 50%;
+  transform: translate(-50%);
+  position: absolute;
+  margin: 0 auto;
+  background: #fff;
+  border: 0;
+  outline: 0;
+  box-shadow: 0 0 5px 3px rgba(0, 0, 0, 0.123);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  /* transform: scale(1.2); */
+}
+
+.service-row .col1 {
+  padding: 4%;
+  border: 0;
+  margin: 0 auto;
+  /* box-shadow: 0 5px 0 0 rgba(0, 0, 0, 0.123); */
+  border-right: 1px solid rgba(190, 190, 190, 0.19);
+  outline: 0;
+  display: block;
+  text-align: left;
+  justify-content: center;
+  align-items: center;
+  /* max-width: 220px; */
+  /* width: 100%; */
+}
+
+.service-row .col1:nth-child(4) {
+  border-right: 0;
+  /* box-shadow: 0 0 0 0; */
+}
+
+.service-row .col1 .fa-solid {
+  font-size: 40px;
+  color: #00008b;
+  margin-bottom: 15px;
+}
+
+.service-row .col1 h3 {
+  font-size: 16px;
+  font-weight: 600;
+  width: 130px;
+  margin-bottom: 10px;
+  color: #00008b;
+}
+
+.service-row .col1 p {
+  font-size: 12px;
+  width: 160px;
+  line-height: 20px;
+  font-weight: 300;
+  color: #00008b;
+}
+
+/* -----------------------News and About Section------------------ */
+
+.services-gallery .media-player {
+  margin-top: 200px;
+  /* background-color: #000; */
+}
+
+.row2 {
+  padding: 0 8%;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+
+.row2 .col2 {
+  flex-basis: 47%;
+}
+
+/* .row2 .col2:nth-child(1) {
+  background: url(images/background\ 2.png);
+  background-size: cover;
+  background-position: center;
+} */
+
+.row2 .col2 video {
+  width: 100%;
+}
+
+#playbtn {
+  position: absolute;
+  font-size: 50px;
+  top: 50%;
+  left: 25%;
+  transform: translateY(-50%);
+  width: 50px;
+  cursor: pointer;
+}
+
+#backVideo {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+}
+
+@media (min-aspect-ratio: 16/9) {
+  #backVideo {
+    width: 100%;
+    height: auto;
+  }
+}
+
+@media (max-aspect-ratio: 16/9) {
+  #backVideo {
+    width: auto;
+    height: 100%;
+  }
+}
+
+.col2 h1 {
+  font-size: 20px;
+  margin-bottom: 20px;
+  font-family: Cantarell;
+  color: red;
+}
+
+.col2 h2 {
+  font-size: 30px;
+  line-height: 35px;
+  margin-bottom: 30px;
+  color: #00008b;
+}
+
+.col2 p {
+  font-weight: 300px;
+  color: #00008b;
+  font-size: 16px;
+  line-height: 30px;
+}
