@@ -112,7 +112,6 @@
             </p>
           </div>
         </div>
-
         <div class="media-player">
           <div class="row2">
             <div class="col2">
@@ -123,9 +122,7 @@
                   id="backVideo"
                 />
               </video>
-              <div>
-                <img src="images/play.png" alt="" id="playbtn" />
-              </div>
+              <img src="images/play.png" alt="" id="btn" />
             </div>
             <div class="col2">
               <h1>ABOUT US</h1>
@@ -142,26 +139,15 @@
 
     <script>
       let backVideo = document.getElementById("backVideo");
-      let playbtn = document.getElementById("playbtn");
+      let btn = document.getElementById("btn");
 
-      // function playbtn1() {
-      //   if (playbtn.classList.contains("images/pause.png")) {
-      //     backVideo.play();
-      //     playbtn.classList.remove("images/play.png");
-      //     playbtn.classList.add("images/pause.png");
-      //   } else {
-      //     playbtn.classList.add("images/play.png");
-      //     playbtn.classList.remove("images/pause.png");
-      //   }
-      // }
-
-      playbtn.onclick = function () {
+      btn.onclick = function () {
         if (backVideo.paused) {
           backVideo.play();
-          // playbtn.src = "images/pause.png";
+          btn.src = "images/pause.png";
         } else {
           backVideo.pause();
-          // playbtn.src = "images/play.png";
+          btn.src = "images/play.png";
         }
       };
     </script>

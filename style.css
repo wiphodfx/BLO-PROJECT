@@ -319,7 +319,7 @@ main .main-text {
   width: 100%;
 }
 
-#playbtn {
+#btn {
   position: absolute;
   font-size: 50px;
   top: 50%;
