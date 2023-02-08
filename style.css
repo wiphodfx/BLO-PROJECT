@@ -309,12 +309,6 @@ main .main-text {
   flex-basis: 47%;
 }
 
-/* .row2 .col2:nth-child(1) {
-  background: url(images/background\ 2.png);
-  background-size: cover;
-  background-position: center;
-} */
-
 .row2 .col2 video {
   width: 100%;
 }
@@ -368,4 +362,36 @@ main .main-text {
   color: #00008b;
   font-size: 16px;
   line-height: 30px;
+}
+
+.footer {
+  width: 100%;
+  height: 300px;
+  background: linear-gradient(
+    to right,
+    rgba(176, 174, 174, 0.2),
+    rgba(108, 105, 105, 0.1)
+  );
+}
+
+.footer .footer-row {
+  width: 100%;
+  padding: 40px 8%;
+  display: inline-flex;
+  justify-content: space-between;
+}
+
+.footer .footer-row div a {
+  display: flex;
+  flex-direction: row;
+  text-decoration: none;
+  font-size: 12px;
+  margin-bottom: 8px;
+}
+
+.footer h2 {
+  margin-left: 8%;
+  padding-top: 40px;
+  color: #00008b;
+  font-size: 17px;
 }
